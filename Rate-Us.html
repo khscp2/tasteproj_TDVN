@@ -12,6 +12,28 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            function a() {
+                document.getElementById("rating").innerHTML= "&#9733;&#9733;&#9733;&#9733;&#9733;";
+            }
+            function b() {
+                document.getElementById("rating").innerHTML= "&#9733;&#9733;&#9733;&#9733;";
+            }
+            function c() {
+                document.getElementById("rating").innerHTML= "&#9733;&#9733;&#9733;";
+            }
+            function d() {
+                document.getElementById("rating").innerHTML= "&#9733;&#9733;";
+            }
+            function e() {
+                document.getElementById("rating").innerHTML= "&#9733;";
+            }
+            function z() {
+                document.getElementById("rating").innerHTML= "";
+                document.getElementById("thanks").innerHTML= "<div class='alert alert-success'><strong>Success!</strong> Indicates a successful or positive action.</div>";
+                document.getElementById("review-box").value= "Type review here...";
+            }
+        </script>
     </head>
     <body>
         <div class="container-fluid">
@@ -34,6 +56,22 @@
                     <li><a href="Order-Online.html">Order Online</a></li>
                 </ul>
             </nav>
+            <div class="btn-group">
+                    <button type="button" onclick="a()" class="btn btn-primary">&#9733;&#9733;&#9733;&#9733;&#9733;</button>
+                    <button type="button" onclick="b()" class="btn btn-primary">&#9733;&#9733;&#9733;&#9733;</button>
+                    <button type="button" onclick="c()" class="btn btn-primary">&#9733;&#9733;&#9733;</button>
+                    <button type="button" onclick="d()" class="btn btn-primary">&#9733;&#9733;</button>
+                    <button type="button" onclick="e()" class="btn btn-primary">&#9733;</button>
+            </div>
+            <span id="rating"></span>
+            <br>
+            <textarea id="review-box">Type review here...</textarea>
+            <br>
+            <button type="button" onclick="z()" class="btn">Submit Review</button>
+            <span id="thanks"></span>
+            <div>
+
+            </div>
         </div>
     </body>
 </html>
