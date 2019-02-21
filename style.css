@@ -1,3 +1,6 @@
-.deli-menu-align {
-    font-align:right;
+h3.prices {
+    text-align:right;
+}
+h3.name {
+    text-align:left;
 }
