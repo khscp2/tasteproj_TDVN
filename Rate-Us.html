@@ -13,6 +13,7 @@
 
         <link rel="stylesheet" type="text/css" href="style.css">
         <script>
+            let r = 0
             function a() {
                 document.getElementById("rating").innerHTML = "&#9733;&#9733;&#9733;&#9733;&#9733;";
             }
@@ -29,13 +30,19 @@
                 document.getElementById("rating").innerHTML = "&#9733;";
             }
             function z() {
-                if(document.getElementById('rating').innerHTML === "") {
-                    document.getElementById("thanks").innerHTML = "<div class='alert alert-warning'><strong>Error</strong> Please select a star value before submitting.</div>";
+                if(r === 1) {
+                    document.getElementById("thanks").innerHTML = "<div class='alert alert-danger'><strong>Error</strong> You cannot submit another review immediately.</div>";
                 } else {
-                    document.getElementById("thanks").innerHTML = "<div class='alert alert-success'><strong>Success!</strong> Review has been submitted.</div>";
+                    if(document.getElementById('rating').innerHTML === "" && r === 0) {
+                        document.getElementById("thanks").innerHTML = "<div class='alert alert-warning'><strong>Error</strong> Please select a star value before submitting.</div>";
+                    } else {
+                        document.getElementById("thanks").innerHTML = "<div class='alert alert-success'><strong>Success!</strong> Review has been submitted.</div>";
+                        document.getElementById("rating").innerHTML = "";
+                        document.getElementById("review-box").value = "";
+                        r = 1
+                    }
                 }
-                document.getElementById("rating").innerHTML = "";
-                document.getElementById("review-box").value = "Type review here...";
+                
             }
         </script>
     </head>
