@@ -10,13 +10,28 @@ h3.name {
     display: block;
     margin: auto;
 }
-.deli-menu-align {
-    font-align:right;
-}
 body {
     background-color:#b5ddb6;
 }
 #map {
     width: 100%;
-    height: ;
+    height: 500px;
+}
+p {
+    text-align: justify;
+}
+div.footer {
+    width: 100%;
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+div.footer, nav {
+    background-color: rgb(50, 50, 50);
+    color: rgb(125, 125, 125);
+}
+div.footer:hover, nav li:hover {
+    background-color: rgb(50, 50, 50);
+    color: rgb(125, 125, 125);
 }
