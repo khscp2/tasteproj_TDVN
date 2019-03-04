@@ -6,28 +6,64 @@ h3.name {
     text-align:left;
 }
 img.picture-uno {
-width:320px;
-height:320px;
-margin:25px 0px 1000px 25px;
+    width:225px;
+    height:225px;
 }
 img.picture-dos {
-width:320px;
-height:320px;
-margin:0px 0px 1000px 25px;
+    width:225px;
+    height:225px;
 }
 img.picture-tres {
-    width:320px;
-    height:320px;
-    margin:0px 0px 1000px 25px;
+    width:225px;
+    height:225px;
 }
-img.4 {
-    
+img.picture-cuatro {
+    width:225px;
+    height:225px;
 }
-img.5 {
-
+img.picture-cinco {
+    width:225px;
+    height:225px;
 }
-img.6 {
-    
+img.picture-seis {
+    width:225px;
+    height:225px;
+}
+h4.picture-uno {
+    margin:0px 0px 850px 0px;
+    text-align:center;
+    border-width:2px;
+    border:solid;
+}
+h4.picture-dos {
+    margin:0px 0px 850px 0px;
+    text-align:center;
+    border-width:2px;
+    border:solid;
+}
+h4.picture-tres {
+    margin:0px 0px 850px 0px;
+    text-align:center;
+    border-width:2px;
+    border:solid;
+}
+h4.picture-cuatro {
+    margin:0px 0px 850px 0px;
+    text-align:center;
+    border-width:2px;
+    border:solid;
+}
+h4.picture-cinco {
+    margin:0px 0px 850px 0px;
+    text-align:center;
+    border-width:2px;
+    border:solid;
+}
+h4.picture-seis {
+    margin:0px 0px 850px 0px;
+    text-align:center;
+    border-width:2px;
+    border:solid;
 }
 #logo-img {
     width: 200px;
@@ -44,17 +80,21 @@ body {
 p {
     text-align: justify;
 }
-.footer {
+div.footer {
     width: 100%;
-    height: 125px;
-    font-size: 15px;
+    font-size: 20px;
+    height: 50px;
     text-align: center;
+    vertical-align: middle;
+}
+div.footer, nav {
     background-color: rgb(50, 50, 50);
     color: rgb(125, 125, 125);
 }
-.glyphicon {
-    margin: 15px;
-    font-size: 20px;
+div.footer:hover, nav li:hover {
+    background-color: rgb(50, 50, 50);
+    color: rgb(125, 125, 125);
+    height: ;
 }
 table.deli {
     margin:auto;
