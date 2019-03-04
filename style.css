@@ -96,8 +96,3 @@ div.footer:hover, nav li:hover {
     color: rgb(125, 125, 125);
     height: ;
 }
-table.deli {
-    margin:auto;
-    display:block;
-    max-width:800px;
-}
