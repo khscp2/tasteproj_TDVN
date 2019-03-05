@@ -1,9 +1,52 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            function a() {
+                if (document.getElementById("aaa").checked === "false") {
+                    document.getElementById("aaaa").innerHTML = "";
+                } else {
+                    document.getElementById("aaaa").innerHTML = "yeet";
+                }
+            }
+            function b() {
+                if (document.getElementById("bbb").checked === "false") {
+                    document.getElementById("bbbb").innerHTML = "";
+                } else {
+                    document.getElementById("bbbb").innerHTML = "yeet";
+                }
+            }
+            function c() {
+                if (document.getElementById("ccc").checked === "false") {
+                    document.getElementById("cccc").innerHTML = "";
+                } else {
+                    document.getElementById("cccc").innerHTML = "yeet";
+                }
+            }
+        </script>
     </head>
     <body>
-
+        <div 
+        <h3>Print Menu</h3>
+        <p>Select which menus you want to print, then print the screen by clicking the three dots in the top right corner of your browser window.</p>
+        <div>
+            <label class="checkbox-inline"><input type="checkbox" value="" onclick="a()" id="aaa">Option 1</label>
+            <label class="checkbox-inline"><input type="checkbox" value="" onclick="b()" id="bbb">Option 2</label>
+            <label class="checkbox-inline"><input type="checkbox" value="" onclick="c()" id="ccc">Option 3</label>
+        </div>
+        <span id="aaaa"></span>
+        <span id="bbbb"></span>
+        <span id="cccc"></span>
     </body>
 </html>
