@@ -94,5 +94,7 @@ div.footer, nav {
 div.footer:hover, nav li:hover {
     background-color: rgb(50, 50, 50);
     color: rgb(125, 125, 125);
-    height: ;
+    height: 100%;
 }
+
+                
