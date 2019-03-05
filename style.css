@@ -83,14 +83,13 @@ p {
 div.footer {
     width: 100%;
     font-size: 20px;
-    height: 50px;
+    height: 20vh;
     text-align: center;
     vertical-align: middle;
-}
-div.footer, nav {
     background-color: rgb(50, 50, 50);
     color: rgb(125, 125, 125);
 }
+<<<<<<< HEAD
 div.footer:hover, nav li:hover {
     background-color: rgb(50, 50, 50);
     color: rgb(125, 125, 125);
@@ -98,3 +97,10 @@ div.footer:hover, nav li:hover {
 }
 
                 
+=======
+table.deli {
+    margin:auto;
+    display:block;
+    max-width:800px;
+}
+>>>>>>> c713085db3b9c4b09c1d29cab24e2a5177831800
