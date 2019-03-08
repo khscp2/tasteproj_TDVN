@@ -12,46 +12,10 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script>
-            let r = 0
-            function a() {
-                document.getElementById("rating").innerHTML = "&#9733;&#9733;&#9733;&#9733;&#9733;";
-            }
-            function b() {
-                document.getElementById("rating").innerHTML = "&#9733;&#9733;&#9733;&#9733;";
-            }
-            function c() {
-                document.getElementById("rating").innerHTML = "&#9733;&#9733;&#9733;";
-            }
-            function d() {
-                document.getElementById("rating").innerHTML = "&#9733;&#9733;";
-            }
-            function e() {
-                document.getElementById("rating").innerHTML = "&#9733;";
-            }
-            function z() {
-                if(r === 1) {
-                    document.getElementById("thanks").innerHTML = "<div class='alert alert-danger'><strong>Error</strong> You cannot submit another review immediately.</div>";
-                } else {
-                    if(document.getElementById('rating').innerHTML === "" && r === 0) {
-                        document.getElementById("thanks").innerHTML = "<div class='alert alert-warning'><strong>Error</strong> Please select a star value before submitting.</div>";
-                    } else {
-                        document.getElementById("thanks").innerHTML = "<div class='alert alert-success'><strong>Success!</strong> Review has been submitted.</div>";
-                        document.getElementById("rating").innerHTML = "";
-                        document.getElementById("review-box").value = "";
-                        r = 1
-                    }
-                }
-                
-            }
-        </script>
     </head>
     <body>
         <div class="container-fluid">
-            <br>
-            <img src="Sandwich.png" id="logo-img">
-            <br>
-            <nav class="navbar navbar-inverse">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="index.html">A Taste of Reality</a>
                 </div>
@@ -64,81 +28,13 @@
                         <ul class="dropdown-menu">
                             <li><a href="Deli-Menu.html">Deli Menu</a></li>
                             <li><a href="Catering-Menu.html">Catering Menu</a></li>
+                            <li><a href="Special-Occasion.html">Special Occasion Menu</a></li>
                         </ul>
                     </li>
                     <li class="active"><a href="Rate-Us.html">Rate Us!</a></li>
                     <li><a href="Order-Online.html">Order Online</a></li>
                 </ul>
             </nav>
-            <div class="jumbotron">
-                <h1>Rate Us!</h1>
-                <p>Leave a review to help improve our store!</p>
-            </div>
-            <h3>Select a star value and type in a comment in the box below.</h3>
-            <div class="row">
-                <div class="col-sm-2 col-xs-12">
-                    <div class="btn-group-vertical">
-                        <button type="button" onclick="a()" class="btn btn-primary">&#9733;&#9733;&#9733;&#9733;&#9733;</button>
-                        <button type="button" onclick="b()" class="btn btn-primary">&#9733;&#9733;&#9733;&#9733;</button>
-                        <button type="button" onclick="c()" class="btn btn-primary">&#9733;&#9733;&#9733;</button>
-                        <button type="button" onclick="d()" class="btn btn-primary">&#9733;&#9733;</button>
-                        <button type="button" onclick="e()" class="btn btn-primary">&#9733;</button>
-                    </div>
-                </div>
-                <div class="col-sm-10">
-                    <textarea id="review-box"></textarea>
-                    <br>
-                    <button type="button" onclick="z()" class="btn">Submit Review</button>
-                    <span id="thanks"></span>
-                </div>
-            </div>
-            <span id="rating"></span>
-            <br>
-            
-            <div>
-                
-            </div>
-            <div class="footer">
-                <div class="row">
-                    <div class="col-xs-1"></div>
-                    <div class="col-xs-2">
-                        <span class="glyphicon glyphicon-home"></span>
-                    </div>
-                    <div class="col-xs-2">
-                        <span class="glyphicon glyphicon-gift"></span>
-                    </div>
-                    <div class="col-xs-2">
-                        <span class="glyphicon glyphicon-earphone"></span>
-                    </div>
-                    <div class="col-xs-2">
-                        <span class="glyphicon glyphicon-envelope"></span>
-                    </div>
-                    <div class="col-xs-2">
-                        <span class="glyphicon glyphicon-print"></span>
-                    </div>
-                    <div class="col-xs-1"></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-1"></div>
-                    <div class="col-xs-2">
-                        Address: 71 Fayson Lake Road, Kinnelon, New Jersey 07405-3128
-                    </div>
-                    <div class="col-xs-2">
-                        Catering: Monday - Friday: 11:00AM - 1:00PM
-                    </div>
-                    <div class="col-xs-2">
-                        Phone: (973) 838-5018 
-                    </div>
-                    <div class="col-xs-2">
-                        Fax: (973) 838-5551
-                    </div>
-                    <div class="col-xs-2">
-                        <a href="Print-Menu.html">Print Menu</a>
-                    </div>
-                    <div class="col-xs-1"></div>
-                </div>
-                <p>Copyright © 2011 - 2019 A Taste of Reality Catering. All rights reserved.</p>
-            </div>
         </div>
     </body>
 </html>
