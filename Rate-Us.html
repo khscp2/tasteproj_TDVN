@@ -75,7 +75,8 @@
                 <p>Leave a review to help improve our store!</p>
             </div>
             <h3>Select a star value and type in a comment in the box below.</h3>
-            <div class="row">
+            <div class="row not-to-big">
+                <div class="col-sm-2 col-xs-12"></div>
                 <div class="col-sm-2 col-xs-12">
                     <div class="btn-group-vertical">
                         <button type="button" onclick="a()" class="btn btn-primary">&#9733;&#9733;&#9733;&#9733;&#9733;</button>
@@ -85,18 +86,42 @@
                         <button type="button" onclick="e()" class="btn btn-primary">&#9733;</button>
                     </div>
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-6 col-xs-12">
+                    <span id="rating"></span>
                     <textarea id="review-box"></textarea>
                     <br>
                     <button type="button" onclick="z()" class="btn">Submit Review</button>
                     <span id="thanks"></span>
                 </div>
             </div>
-            <span id="rating"></span>
             <br>
-            
             <div>
-                
+                <a href="https://www.google.com/maps/place/A+Taste+of+Reality+Deli+%26+Catering/@40.9717294,-74.3732867,17z/data=!3m1!4b1!4m7!3m6!1s0x0:0xd0901b6bcc45c22c!8m2!3d40.9717294!4d-74.371098!9m1!1b1?hl=en-US">More Reviews</a>
+                <div class="progress" id="star5">
+                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:90%;">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    </div>
+                </div>
+                <div class="progress" id="star4">
+                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:40%;">
+                        <span>&#9733;&#9733;&#9733;&#9733;</span>
+                    </div>
+                </div>
+                <div class="progress" id="star3">
+                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:10%;">
+                        <span>&#9733;&#9733;&#9733;</span>
+                    </div>
+                </div>
+                <div class="progress" id="star2">
+                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:2%;">
+                        <span>&#9733;&#9733;</span>
+                    </div>
+                </div>
+                <div class="progress" id="star1">
+                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:5%;">
+                        <span>&#9733;</span>
+                    </div>
+                </div>
             </div>
             <div class="footer">
                 <div class="row">
