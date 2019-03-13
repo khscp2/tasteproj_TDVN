@@ -12,10 +12,585 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            function a() {
+                if (document.getElementById("aaaa").style.display === "block") {
+                    document.getElementById("aaaa").style.display = "none";
+                } else {
+                    document.getElementById("aaaa").style.display = "block";
+                }
+            }
+            function b() {
+                if (document.getElementById("bbbb").style.display === "block") {
+                    document.getElementById("bbbb").style.display = "none";
+                } else {
+                    document.getElementById("bbbb").style.display = "block";
+                }
+            }
+            function c() {
+                if (document.getElementById("cccc").style.display === "block") {
+                    document.getElementById("cccc").style.display = "none";
+                } else {
+                    document.getElementById("cccc").style.display = "block";
+                }
+            }
+        </script>
     </head>
-    <body>
+    <body id="white">
         <div class="container-fluid">
-
+                <h3>Print Menu</h3>
+                <a href="index.html">Back to Home</a>
+                <p>Select which menus you want to print, then print the screen by clicking the three dots in the top right corner of your browser window.</p>
+                <div>
+                    <label class="checkbox-inline"><input type="checkbox" onclick="a()" id="aaa">Deli Menu</label>
+                    <label class="checkbox-inline"><input type="checkbox" onclick="b()" id="bbb">Catering Menu</label>
+                    <label class="checkbox-inline"><input type="checkbox" onclick="c()" id="ccc">Special Menu</label>
+                </div>
+                <br>
+                <div id="aaaa">
+                    <h4>Deli Menu</h4>
+                    <table class="table print-menu-table">
+                        <tr>
+                            <td><h3>Antipasto Salad</h3></td>
+                            <td><h3 class="prices">Small:$4.99   Large:$8.49</h3></td>
+                            <td><h3 class="prices">Ham, genoa, provolone, roasted peppers, olives, tomatoes, and red onion over a bed of mixed greens served with oil and vinegar</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Big George</h3></td>
+                            <td><h3 class="prices">$8.49</h3></td>
+                            <td><h3 class="prices">Grilled marinated chicken breast, taylor ham, fried onions,roasted red peppers, and honey mustard on a long roll</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Boonton Bomber</h3></td>
+                            <td><h3 class="prices">$7.99</h3></td>
+                            <td><h3 class="prices">Cappy ham, salami, pepperoni, provolone cheese, lettuce, tomato, onions, oil and vinegar on a long roll</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Burgers</h3></td>
+                            <td><h3 class="prices">$4.99 to $6.79</h3></td>
+                            <td><h3 class="prices">Hamburgers, Cheeseburgers and the like</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Caeser Salad</h3></td>
+                            <td><h3 class="prices">Small:$4.99   Large:$7.99</h3></td>
+                            <td><h3 class="prices">Fresh cut romaine lettuce with parmesan cheese and store made garlic seasoned croutons</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Cheesetopher</h3></td>
+                            <td><h3 class="prices">$3.09</h3></td>
+                            <td><h3 class="prices">Grilled cheese on white with taylor ham and cheese</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Chicken Breast</h3></td>
+                            <td><h3 class="prices">$6.99 to $7.49</h3></td>
+                            <td><h3 class="prices">Chicken; grilled or breaded</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Chicken Tenders</h3></td>
+                            <td><h3 class="prices">$5.99</h3></td>
+                            <td><h3 class="prices">Four (4) delicious Chicken Tenders or (3) tenders with fries </h3></td>
+                        </tr>
+                        <tr>
+                                <td><h3>Grilled Cheese</h3></td>
+                                <td><h3 class="prices">$3.99 to $4.99</h3></td>
+                                <td><h3 class="prices">The best of the best</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Cranberry Walnut Salad</h3></td>
+                            <td><h3 class="prices">$8.99</h3></td>
+                            <td><h3 class="prices">Dried cranberries, candied walnuts, crumbled blue cheese, grilled chicken and red onion over baby greens served with a honey-thyme vinaigrette</h3></td>
+                        </tr>
+                            <td><h3>Double Egg</h3></td>
+                            <td><h3 class="prices">$2.49</h3></td>
+                            <td><h3 class="prices">Double any style egg any style</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Double Egg Platter</h3></td>
+                            <td><h3 class="prices">$5.49</h3></td>
+                            <td><h3 class="prices">Two eggs any style with your choice of toast, hash browns and either bacon, Taylor ham or sausage</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Early Bird</h3></td>
+                            <td><h3 class="prices">$2.09</h3></td>
+                            <td><h3 class="prices">Egg any style with cheese on an English Muffin</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Egg with Cheese</h3></td>
+                            <td><h3 class="prices">$2.09</h3></td>
+                            <td><h3 class="prices">Egg any style with cheese</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Fayson Lakes Hero</h3></td>
+                            <td><h3 class="prices">$7.49</h3></td>
+                            <td><h3 class="prices">Ham, salami, provolone cheese, lettuce, tomato, onion, oil and vinegar on a long roll </h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>French Toast Platter</h3></td>
+                            <td><h3 class="prices">$4.89</h3></td>
+                            <td><h3 class="prices">Three slices of French toast with side of butter and syrup...$4.89 add bacon, Taylor ham or sausage patty ...$6.39</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Hoagie</h3></td>
+                            <td><h3 class="prices">$4.99</h3></td>
+                            <td><h3 class="prices">Scrambled eggs with peppers, potatoes & provolone on a long roll</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Hot Roast Beef with Gravy</h3></td>
+                            <td><h3 class="prices">$7.49</h3></td>
+                            <td><h3 class="prices">A Hot Roast Beef Sandwich topped with Gravy.</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Jen’s Italian Bird</h3></td>
+                            <td><h3 class="prices">$7.49</h3></td>
+                            <td><h3 class="prices">Breaded chicken cutlet, mozzarella cheese, fried eggplant, fresh sliced tomato and ricotta cheese on a kaiser</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Joyce and Katie’s Choice</h3></td>
+                            <td><h3 class="prices">$6.99</h3></td>
+                            <td><h3 class="prices">Store cooked roast beef, swiss cheese, roasted red peppers and honey mustard on a kaiser</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Kakeout Special</h3></td>
+                            <td><h3 class="prices">$7.99</h3></td>
+                            <td><h3 class="prices">Soppressata, cappy ham, sliced mozzarella cheese, roasted red peppers, sun dried tomatoes and basil oil on a long roll</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Patlen’s Pick</h3></td>
+                            <td><h3 class="prices">$7.99</h3></td>
+                            <td><h3 class="prices">Breaded chicken cutlet, melted mozzarella cheese, and brown gravy on a long roll</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Kinnelon’s Best</h3></td>
+                            <td><h3 class="prices">$7.99</h3></td>
+                            <td><h3 class="prices">Store cooked roast beef, Boar's Head turkey breast, American cheese, lettuce, tomato and mayo on a long roll</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Mike’s Delight</h3></td>
+                            <td><h3 class="prices">$6.99</h3></td>
+                            <td><h3 class="prices">Breaded chicken cutlet, pepperjack cheese, bacon and lots of BBQ sauce on a kaiser</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Montville’s Honey</h3></td>
+                            <td><h3 class="prices">$6.99</h3></td>
+                            <td><h3 class="prices">Grilled Boar's Head honey ham, melted swiss cheese, and honey mustard on a kaiser</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Oakwood Trail</h3></td>
+                            <td><h3 class="prices">$7.49</h3></td>
+                            <td><h3 class="prices">Grilled zucchini, yellow squash, peppers, onions, provolone cheese and balsamic vinegar on a long roll</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Parmesan Hero Sandwiches</h3></td>
+                            <td><h3 class="prices">$7.49</h3></td>
+                            <td><h3 class="prices">Bread chicken cutlet, breaded eggplant or store made meatballs </h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Rajun Cajun</h3></td>
+                            <td><h3 class="prices">$7.49</h3></td>
+                            <td><h3 class="prices">Boar's Head peppermill turkey, cappy ham, pepperjack cheese, lettuce, tomato, hot peppers and cajun mayo on a kaiser</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Reuben</h3></td>
+                            <td><h3 class="prices">$7.49</h3></td>
+                            <td><h3 class="prices">YUM YUM YUM</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Sides</h3></td>
+                            <td><h3 class="prices">$2.49 to $4.99</h3></td>
+                            <td><h3 class="prices">A variety of sides such as fries, etc.</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Smoke Rise Special</h3></td>
+                            <td><h3 class="prices">$7.99</h3></td>
+                            <td><h3 class="prices">Thinly sliced imported prosciutto, genoa salami, fresh mozzarella and roasted red peppers on a long roll</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Suzi Sweetie</h3></td>
+                            <td><h3 class="prices">$7.49</h3></td>
+                            <td><h3 class="prices">Grilled Boar's Head maple glazed turkey, melted mozzarella cheese, bacon and honey mustard on a kaiser</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>The Leftover</h3></td>
+                            <td><h3 class="prices">$7.49</h3></td>
+                            <td><h3 class="prices">Grilled turkey breast, homemade stuffing, cranberry sauce and gravy on a whole wheat wrap</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>The Slickster</h3></td>
+                            <td><h3 class="prices">$8.49</h3></td>
+                            <td><h3 class="prices">Store made breaded eggplant, ham, roasted red peppers, and fresh mozzarella on a long roll</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>World Series Wrap</h3></td>
+                            <td><h3 class="prices">$7.49</h3></td>
+                            <td><h3 class="prices">Grilled chicken, melted Brie cheese, fresh spinach, sliced apples and honey mustard on a spinach wrap</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Muffin</h3></td>
+                            <td><h3 class="prices">$2.49</h3></td>
+                            <td><h3 class="prices">Yum stuff</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Muffin with Butter:</h3></td>
+                            <td><h3 class="prices">$2.75</h3></td>
+                            <td><h3 class="prices">A buttered muffin</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Roll:</h3></td>
+                            <td><h3 class="prices">$0.75</h3></td>
+                            <td><h3 class="prices">Roll of bread</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Roll with Butter</h3></td>
+                            <td><h3 class="prices">$1.25</h3></td>
+                            <td><h3 class="prices">A buttered roll</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Bagel</h3></td>
+                            <td><h3 class="prices">$1.00</h3></td>
+                            <td><h3 class="prices">Fresh bagel</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Bagel with Butter</h3></td>
+                            <td><h3 class="prices">$1.50</h3></td>
+                            <td><h3 class="prices">A buttered bagel</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Bagel with Cream Cheese</h3></td>
+                            <td><h3 class="prices">$1.85</h3></td>
+                            <td><h3 class="prices">A creamed bagel</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Beach Buster</h3></td>
+                            <td><h3 class="prices">$7.99</h3></td>
+                            <td><h3 class="prices">Fresh basil, ripe tomatoes, fresh mozzarella, garlic oil and balsamic vinegar on a long roll.</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>BLT </h3></td>
+                            <td><h3 class="prices">$4.99</h3></td>
+                            <td><h3 class="prices">Bacon, Lettuce & Tomato</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Breakfast Sides</h3></td>
+                            <td><h3 class="prices">$0.50 to $0.75</h3></td>
+                            <td><h3 class="prices">Classic breakfast sides such as hashbrowns, cheese, etc,</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Buffalo Wings</h3></td>
+                            <td><h3 class="prices">$6.99</h3></td>
+                            <td><h3 class="prices">Buffalo Wings with Bleu Cheese</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Burrito</h3></td>
+                            <td><h3 class="prices">$5.99</h3></td>
+                            <td><h3 class="prices">Double scrambled eggs, cheddar cheese, potatoes, peppers, onions & salsa in a wrap</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Cheese Steaks</h3></td>
+                            <td><h3 class="prices">$6.99</h3></td>
+                            <td><h3 class="prices">8 Ounce Steak Sandwiches</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Chef Salad</h3></td>
+                            <td><h3 class="prices">Small:$4.49   Large:$7.49</h3></td>
+                            <td><h3 class="prices">Ham, Turkey,Roast Beef and Swiss Cheese on a bed of crisp lettuce with vegetables.</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Chicken Steaks</h3></td>
+                            <td><h3 class="prices">$6.99</h3></td>
+                            <td><h3 class="prices">8 OZ Chicken Steak Sandwiches</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Hot Dogs</h3></td>
+                            <td><h3 class="prices">$2.49 to $6.99</h3></td>
+                            <td><h3 class="prices">We use Boar's Head Hot Dogs — Choose "Traditional" or "Italian"</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Club Sandwiches</h3></td>
+                            <td><h3 class="prices">$6.49</h3></td>
+                            <td><h3 class="prices">Sliced turkey breast, ham or roast beef on three layers of toast with bacon, lettuce, tomato and mayo</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Double Egg Cheese</h3></td>
+                            <td><h3 class="prices">$2.99</h3></td>
+                            <td><h3 class="prices">Double egg any style with cheese</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Dynamite</h3></td>
+                            <td><h3 class="prices">$7.99</h3></td>
+                            <td><h3 class="prices">Store cooked roast beef, pepperoni, fresh mozzarella topped with cole slaw and balsamic vinegar on a long roll</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Egg in any Style</h3></td>
+                            <td><h3 class="prices">$1.59</h3></td>
+                            <td><h3 class="prices">Egg any style</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Father Tim</h3></td>
+                            <td><h3 class="prices">$7.99</h3></td>
+                            <td><h3 class="prices">Boar's Head turkey breast, bacon, lettuce, tomato and mayo on a long roll</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Flying Flembroni</h3></td>
+                            <td><h3 class="prices">$8.99</h3></td>
+                            <td><h3 class="prices">Breaded chicken cutlet, melted mozzarella cheese, bacon and Alfredo sauce on a toasted long roll</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Full Monty</h3></td>
+                            <td><h3 class="prices">$7.99</h3></td>
+                            <td><h3 class="prices">Grilled roast beef, melted mozzarella cheese, hot and sweet peppers with horseradish dressing on a long roll </h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Greek Salad</h3></td>
+                            <td><h3 class="prices">$8.49</h3></td>
+                            <td><h3 class="prices">Cucumbers, grape tomatoes, peppers, red onion, olives and feta cheese over mixed greens topped served with oil/vinegar dressing</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Gut Buster</h3></td>
+                            <td><h3 class="prices">$7.49</h3></td>
+                            <td><h3 class="prices">Double Egg, Double Cheese, Hash Browns, and Taylor Ham* on a Long Roll
+                                    <br>*Substitute Bacon or Sausage</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Jack's Stack</h3></td>
+                            <td><h3 class="prices">$7.49</h3></td>
+                            <td><h3 class="prices">Hot pastrami, stacked high with melted swiss cheese and spicy mustard on grilled rye</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Jim's Favorite</h3></td>
+                            <td><h3 class="prices">$7.49</h3></td>
+                            <td><h3 class="prices">Grilled marinated chicken breast, fresh mozzarella and red peppers on a kaiser </h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Judi's Patootie</h3></td>
+                            <td><h3 class="prices">$8.49</h3></td>
+                            <td><h3 class="prices">Grilled marinated chicken breast, sauteed mushrooms, roasted red peppers, melted mozzarella, arugala, and balsamic vinegar on a long roll</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Kinnelon Killer</h3></td>
+                            <td><h3 class="prices">$7.49</h3></td>
+                            <td><h3 class="prices">Hot roast beef, melted American cheese, fried onions, Russian dressing on grilled rye</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Mazza Masterpiece</h3></td>
+                            <td><h3 class="prices">$7.49</h3></td>
+                            <td><h3 class="prices">Breaded chicken cutlet, American cheese, bacon, lettuce and Ranch dressing on a long roll</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Monster</h3></td>
+                            <td><h3 class="prices">$4.99</h3></td>
+                            <td><h3 class="prices">Double Egg, Double Cheese with Taylor Ham*
+                                    <br>*Substitute Bacon or Sausage</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>My Blue Heaven</h3></td>
+                            <td><h3 class="prices">$7.49</h3></td>
+                            <td><h3 class="prices">Arugala, fresh mozzarella cheese, roasted red peppers, sun dried tomatoes and balsamic vinegar on a long roll</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Omelette</h3></td>
+                            <td><h3 class="prices">$5.49</h3></td>
+                            <td><h3 class="prices">Triple scrambled egg with ham and cheese served with hash browns and toast in a platter</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Penola's Package</h3></td>
+                            <td><h3 class="prices">$7.99</h3></td>
+                            <td><h3 class="prices">Breaded chicken tenders, melted mozzarella cheese,and french fries on a long roll with your choice of sauce (honey mustard, BBQ, hot sauce, brown gravy, ranch)</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Reality Salad</h3></td>
+                            <td><h3 class="prices">$8.49</h3></td>
+                            <td><h3 class="prices">Chopped salad with cucumbers, grape tomatoes, crumbled bacon, and feta cheese over mixed greens topped with fried seasoned chick peas served with ranch dressing</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Roe's Wrap</h3></td>
+                            <td><h3 class="prices">$7.49</h3></td>
+                            <td><h3 class="prices">Grilled marinated chicken breast, provolone cheese, sauteed mushrooms and onions all wrapped up in a flour tortilla</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Special any Style</h3></td>
+                            <td><h3 class="prices">$3.49</h3></td>
+                            <td><h3 class="prices">Egg any style with cheese, Taylor Ham, Sausage or Bacon</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Spicy Librarian</h3></td>
+                            <td><h3 class="prices">$7.49</h3></td>
+                            <td><h3 class="prices">Grilled marinated chicken breast, pepperjack cheese, lettuce, tomato and avocado in a flour tortilla</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>TH&C</h3></td>
+                            <td><h3 class="prices">$2.99</h3></td>
+                            <td><h3 class="prices">Taylor Ham and Cheese</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>The Skinny</h3></td>
+                            <td><h3 class="prices">$4.99</h3></td>
+                            <td><h3 class="prices">Triple egg white with spinach, tomato and feta cheese in a whole wheat wrap</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Vista's Vixen</h3></td>
+                            <td><h3 class="prices">$7.49</h3></td>
+                            <td><h3 class="prices">Grilled Boar's head turkey and melted American cheese on grilled rye</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Yo Vinnie</h3></td>
+                            <td><h3 class="prices">$8.49</h3></td>
+                            <td><h3 class="prices">Thinly sliced imported prosciutto, pepperoni, salami, sliced mozzarella cheese, lettuce, tomato and balsamic vinegar on a long roll</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Garden Salad</h3></td>
+                            <td><h3 class="prices">Small:$3.99   Large:$6.99</h3></td>
+                            <td><h3 class="prices">Crisp Lettuce with Celery, Carrots, Cucumbers, Peppers and Tomatoes.</h3></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="bbbb">
+                <h4>Catering Menu</h4>
+                <table class="table print-menu-table">
+                    <tr>
+                        <td><h3>Asparagus Orange Salad</h3></td>
+                        <td><h3 class="prices">$40 to $70</h3></td>
+                        <td><h3 class="prices">Mixed baby greens, asparagus spears, fresh orange segments, sliced red onion, and crumbled goat cheese served with a orange poppy vinaigrette.</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Baked Brie</h3></td>
+                        <td><h3 class="prices">$30 each</h3></td>
+                        <td><h3 class="prices">Brie cheese topped with nuts and cranberries OR pesto and sun dried tomatoes baked in a puff pastry.</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Buffalo Wings</h3></td>
+                        <td><h3 class="prices">$45</h3></td>
+                        <td><h3 class="prices">Wings and mini drums braised golden brown, hot and spicy served with celery sticks and chunky bleu cheese.</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Berry Blast Salad</h3></td>
+                        <td><h3 class="prices">$40 to $70</h3></td>
+                        <td><h3 class="prices">Mixed baby greens, sliced strawberries, blue berries, toasted almonds and crumbled feta cheese served with a honey vinaigrette.</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Broccoli Salad</h3></td>
+                        <td><h3 class="prices">$20 to $50</h3></td>
+                        <td><h3 class="prices">Broccoli and cauliflower florets mixed with raisins, sunflower seeds, onions and crumbled bacon in a creamy dressing.</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Caesar Salad</h3></td>
+                        <td><h3 class="prices">$25 to $50</h3></td>
+                        <td><h3 class="prices">Crisp romaine lettuce, garlic seasoned croutons and parmesan cheese served with cream Caesar dressing.</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Classic American</h3></td>
+                        <td><h3 class="prices">$10.99 per person</h3></td>
+                        <td><h3 class="prices">Boar’s Head Deluxe ham, Boar’s Head Oven Roasted Turkey breast, and store cooked roast beef, and Boar’s Head Genoa Salami includes choice of two cheeses and two homemade salads.</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>City Delight</h3></td>
+                        <td><h3 class="prices">$11.49 per person</h3></td>
+                        <td><h3 class="prices">Boar’s Head Corned Beef and Pastrami, Boar’s Head Oven Roasted Turkey breast, and store cooked roast beef, includes choice of two cheeses, and two homemade salads</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Cranberry Walnut Salad</h3></td>
+                        <td><h3 class="prices">$35 to $65</h3></td>
+                        <td><h3 class="prices">Mixed baby greens, dried cranberries, red onion, crumbled blue cheese, and sugar toasted walnuts served with a herb vinaigrette.</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Father Tim</h3></td>
+                        <td><h3 class="prices">$7.99</h3></td>
+                        <td><h3 class="prices">Boar's Head turkey breast, bacon, lettuce, tomato and mayo on a long roll</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Greek Salad</h3></td>
+                        <td><h3 class="prices">$32 to $50</h3></td>
+                        <td><h3 class="prices">Romaine and iceberg lettuce, chopped cucumbers, tomatoes, peppers, Kalamata olives, red onions and feta cheese served with a Greek lemon vinaigrette.</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Gourmet Platters</h3></td>
+                        <td><h3 class="prices">$60 to $90</h3></td>
+                        <td><h3 class="prices">An assortment of sandwiches including but not limited to: My Blue Heaven; Christiana Arugala; French Twist; Slickster; Judy’s Patootie; Veggie and Chicken Salad Club.</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Heroes by the Foot</h3></td>
+                        <td><h3 class="prices">$16 to $20</h3></td>
+                        <td><h3 class="prices">2,3,4,5,and 6 Foot Heros. Serves approximately 5 people per foot</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Italian Basil Salad</h3></td>
+                        <td><h3 class="prices">$40 to $70</h3></td>
+                        <td><h3 class="prices">Mixed baby greens, diced English cucumber, diced tomatoes, Kalamata olives, crispy pancetta, crumbled blue cheese, and toasted pine nuts served with a fresh basil vinaigrette.</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Oriental Noodle Salad</h3></td>
+                        <td><h3 class="prices">$22 to $48</h3></td>
+                        <td><h3 class="prices">Farfalle pasta tossed in sesame peanut dressing with julienne vegetables and topped with sesame seeds and peanuts.</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Pig n the Blanket</h3></td>
+                        <td><h3 class="prices">$35 per 100</h3></td>
+                        <td><h3 class="prices">Cocktail franks wrapped in puff pastry served with spicy mustard.</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Roasted Vegetable Platter</h3></td>
+                        <td><h3 class="prices">Small:$44 Large:$57</h3></td>
+                        <td><h3 class="prices">Eggplant, zucchini, yellow squash, asparagus, red and yellow peppers, red onions and mushrooms.</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Sloppy Jim’s</h3></td>
+                        <td><h3 class="prices">$64 to $80</h3></td>
+                        <td><h3 class="prices">Four combinations; Boar’s Head Turkey and Deluxe Ham, Boar’s Head Turkey and roast beef, Boar’s Head Turkey and Pastrami, Boar’s Head Pastrami and Corned Beef topped with swiss cheese, homemade cole slaw and Russian dressing on rye bread, quartered and plattered.</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Mandarin Orange Salad</h3></td>
+                        <td><h3 class="prices">$32 to $55</h3></td>
+                        <td><h3 class="prices">Romaine and iceberg lettuce topped with celery, scallions, mandarin oranges, and glazed almonds.</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Orzo Pasta Salad</h3></td>
+                        <td><h3 class="prices">$22 to $48</h3></td>
+                        <td><h3 class="prices">Rice shaped pasta, grapes tomato halves, fresh basil, toasted pine nuts, and feta cheese in a honey vinaigrette.</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Reality Bites</h3></td>
+                        <td><h3 class="prices">$60 to $75</h3></td>
+                        <td><h3 class="prices">Finger sandwiches made with Boar’s Head Oven Roasted Turkey breast, Boar’s Head Deluxe Ham, and our store cooked roast beef with mixed cheeses (American, Swiss, Cheddar, Provolone,or Muenster), and romaine lettuce on multigrain, whole wheat, country white, rye bread, or mini kaiser roll. Also available on mini kaisers our homemade tuna, egg and chicken salad, two minis per guest.</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Tossed Salad</h3></td>
+                        <td><h3 class="prices">$25 to $50</h3></td>
+                        <td><h3 class="prices">Romaine lettuce or mixed baby greens, tomatoes, cucumbers, and carrots served with a balsamic vinaigrette.</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Antipasto Platter</h3></td>
+                        <td><h3 class="prices">$75</h3></td>
+                        <td><h3 class="prices">Our select Italian specialties fresh mozzarella, sun dried tomatoes, roasted peppers, olives, mushroom salad, artichokes hearts, imported provolone, genoa salami, soppressata, and cappy ham.</h3></td>
+                    </tr>
+                <tr>
+                    <td><h3>Hot Buffet – Option 1</h3></td>
+                    <td><h3 class="prices">$17.99 per person</h3></td>
+                    <td><h3 class="prices">20 Person Minimum, chose a menu to suit your needs.</h3></td>
+                </tr>
+                <tr>
+                    <td><h3>Hot Buffet – Option 2</h3></td>
+                    <td><h3 class="prices">$23.99 per guest</h3></td>
+                    <td><h3 class="prices">20 Person Minimum, chose a menu to suit your needs.</h3></td>
+                </tr>
+                <tr>
+                    <td><h3>Hot Buffet – Option 3</h3></td>
+                    <td><h3 class="prices">$27.99 per person</h3></td>
+                    <td><h3 class="prices">20 Person Minimum, chose a menu to suit your needs.</h3></td>
+                </tr>
+                <tr>
+                    <td><h3>Holiday Hot Buffet II</h3></td>
+                    <td><h3 class="prices">$29.99 per person</h3></td>
+                    <td><h3 class="prices">Relax and let us do the cooking for your holiday party...choose from two appetizers, three hot entrees, two side dish salad and rolls</h3></td>
+                </tr>
+                <tr>
+                    <td><h3>Swedish Meatballs</h3></td>
+                    <td><h3 class="prices">$44 to $66</h3></td>
+                    <td><h3 class="prices">Seasoned meatballs covered in a creamy brown sauce</h3></td>
+                </tr>
+            </table>
+            </div>
+            <div id="cccc">
+                yeet
+            </div>
         </div>
     </body>
 </html>
