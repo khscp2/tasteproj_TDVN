@@ -1,5 +1,5 @@
-img.index {
-    object-fit: cover;
+.index {
+    margin: 10px;
 }
 h3.prices {
     text-align:right;
