@@ -230,3 +230,11 @@ table.deli {
     text-align: center;
     margin: 10px;
 }
+#lit {
+    margin:75px 0px 5px 0px
+}
+#littwo {
+    text-align:center;
+    border-width:2px;
+    border:solid;
+}
