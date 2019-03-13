@@ -219,3 +219,11 @@ table.deli {
 .progress span {
     color: black;
 }
+.fullscreen {
+    height: 50vh;
+}
+#center-a {
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
