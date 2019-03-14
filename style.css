@@ -230,3 +230,14 @@ table.deli {
     text-align: center;
     margin: 10px;
 }
+h5 + p {
+    margin-left: 25px;
+    font-size: 17px;
+}
+h5 {
+    font-size: 20px;
+    margin-left: 10px;
+}
+h3, .jumbotron {
+    font-family: impact;
+}
