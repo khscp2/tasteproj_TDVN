@@ -241,3 +241,11 @@ h5 {
 h3, .jumbotron {
     font-family: impact;
 }
+#lit {
+    margin:75px 0px 5px 0px;
+}
+#littwo {
+    text-align:center;
+    border-width:2px;
+    border:solid;
+}
