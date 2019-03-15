@@ -135,7 +135,7 @@ h3.sizing {
     font-size:px;
 }
 #logo-img {
-    width: 200px;
+    width: 50%;
     display: block;
     margin: auto;
 }
@@ -152,11 +152,11 @@ p {
 div.footer {
     width: 100%;
     font-size: 15px;
-    height: 20vh;
     text-align: center;
     vertical-align: middle;
     background-color: rgb(50, 50, 50);
     color: rgb(125, 125, 125);
+    padding: 10px;
 }
 div.footer p {
     margin: 20px;
