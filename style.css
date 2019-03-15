@@ -1,10 +1,6 @@
 .index {
     margin: 10px;
 }
-h3.prices {
-    text-align:right;
-    padding:10px 20px 10px 20px;
-}
 h3.white {
     background-color:white;
 }
@@ -60,73 +56,73 @@ img.picture-seis-seis {
     height:225px;
 }
 h4.picture-uno {
-    margin:0px 0px 900px 0px;
+    margin:0px 0px 100px 0px;
     text-align:center;
     border-width:2px;
     border:solid;
 }
 h4.picture-dos {
-    margin:0px 0px 900px 0px;
+    margin:0px 0px 100px 0px;
     text-align:center;
     border-width:2px;
     border:solid;
 }
 h4.picture-tres {
-    margin:0px 0px 900px 0px;
+    margin:0px 0px 100px 0px;
     text-align:center;
     border-width:2px;
     border:solid;
 }
 h4.picture-cuatro {
-    margin:0px 0px 900px 0px;
+    margin:0px 0px 100px 0px;
     text-align:center;
     border-width:2px;
     border:solid;
 }
 h4.picture-cinco {
-    margin:0px 0px 900px 0px;
+    margin:0px 0px 100px 0px;
     text-align:center;
     border-width:2px;
     border:solid;
 }
 h4.picture-seis {
-    margin:0px 0px 450px 0px;
+    margin:0px 0px 100px 0px;
     text-align:center;
     border-width:2px;
     border:solid;
 }
 h4.picture-uno-uno {
-    margin:0px 0px 600px 0px;
+    margin:0px 0px 100px 0px;
     text-align:center;
     border-width:2px;
     border:solid;
 }
 h4.picture-dos-dos {
-    margin:0px 0px 600px 0px;
+    margin:0px 0px 100px 0px;
     text-align:center;
     border-width:2px;
     border:solid;
 }
 h4.picture-tres-tres {
-    margin:0px 0px 600px 0px;
+    margin:0px 0px 100px 0px;
     text-align:center;
     border-width:2px;
     border:solid;
 }
 h4.picture-cuatro-cuatro {
-    margin:0px 0px 600px 0px;
+    margin:0px 0px 100px 0px;
     text-align:center;
     border-width:2px;
     border:solid;
 }
 h4.picture-cinco-cinco {
-    margin:0px 0px 600px 0px;
+    margin:0px 0px 100px 0px;
     text-align:center;
     border-width:2px;
     border:solid;
 }
 h4.picture-seis-seis {
-    margin:0px 0px 100px 0px;
+    margin:0px 0px 0px 0px;
     text-align:center;
     border-width:2px;
     border:solid;
@@ -253,4 +249,7 @@ img.center {
     display:block;
     margin-left:auto;
     margin-right:auto;
+}
+.width {
+    max-width:100% !important;
 }
